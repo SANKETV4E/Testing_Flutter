@@ -8,6 +8,7 @@ import 'package:flutter_testing/widgets/custom_button.dart';
 class AndroidLargeTenScreen extends GetWidget<AndroidLargeTenController> {
   @override
   Widget build(BuildContext context) {
+    
     return SafeArea(
         child: Scaffold(
             backgroundColor: ColorConstant.blue20001,
@@ -246,4 +247,8 @@ class AndroidLargeTenScreen extends GetWidget<AndroidLargeTenController> {
   onTapCancel() {
     Get.toNamed(AppRoutes.homeScreen);
   }
+}
+
+class StrokeAlign {
+  static var outside;
 }
