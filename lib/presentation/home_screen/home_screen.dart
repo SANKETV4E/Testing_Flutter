@@ -35,7 +35,7 @@ class HomeScreen extends GetWidget<HomeController> {
                 actions: [
                   Container(
                       margin:
-                          getMargin(left: 41, top: 4, right: 41, bottom: 22),
+                          getMargin(left: 29, top: 4, right: 29, bottom: 10),
                       padding: getPadding(all: 3),
                       decoration: AppDecoration.fillBlue700.copyWith(
                           borderRadius: BorderRadiusStyle.circleBorder24),
