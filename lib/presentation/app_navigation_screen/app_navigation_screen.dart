@@ -57,7 +57,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                       children: [
                                         GestureDetector(
                                             onTap: () {
-                                              onTapHomeScreen();
+                                              onTapWaitingForSender();
                                             },
                                             child: Container(
                                                 decoration:
@@ -78,7 +78,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "lbl_home_screen"
+                                                                  "msg_waiting_for_sender2"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -103,7 +103,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapAndroidLargeOne();
+                                              onTapSplashScreen();
                                             },
                                             child: Container(
                                                 decoration:
@@ -124,7 +124,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large"
+                                                                  "lbl_splash_screen"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -170,7 +170,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large2"
+                                                                  "msg_android_large"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -216,7 +216,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large3"
+                                                                  "msg_android_large2"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -262,7 +262,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large4"
+                                                                  "msg_android_large3"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -287,7 +287,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapAndroidLargeEight();
+                                              onTapSelectReceivers();
                                             },
                                             child: Container(
                                                 decoration:
@@ -308,7 +308,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large5"
+                                                                  "msg_select_receivers"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -333,7 +333,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapAndroidLargeTen();
+                                              onTapActiveTransfers();
                                             },
                                             child: Container(
                                                 decoration:
@@ -354,7 +354,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large6"
+                                                                  "msg_active_transfers2"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -379,7 +379,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapAndroidLargeTwelve();
+                                              onTapActiveReceiving();
                                             },
                                             child: Container(
                                                 decoration:
@@ -400,53 +400,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large7"
-                                                                      .tr,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .center,
-                                                                  style: AppStyle
-                                                                      .txtRobotoRegular20))),
-                                                      Padding(
-                                                          padding: getPadding(
-                                                              top: 5),
-                                                          child: Divider(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              thickness:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              color: ColorConstant
-                                                                  .bluegray400))
-                                                    ]))),
-                                        GestureDetector(
-                                            onTap: () {
-                                              onTapAndroidLargeEleven();
-                                            },
-                                            child: Container(
-                                                decoration:
-                                                    AppDecoration.fillWhiteA700,
-                                                child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    children: [
-                                                      Align(
-                                                          alignment: Alignment
-                                                              .centerLeft,
-                                                          child: Padding(
-                                                              padding:
-                                                                  getPadding(
-                                                                      left: 20,
-                                                                      top: 10,
-                                                                      right: 20,
-                                                                      bottom:
-                                                                          10),
-                                                              child: Text(
-                                                                  "msg_android_large8"
+                                                                  "msg_active_receiving"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -492,7 +446,53 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_android_large9"
+                                                                  "msg_android_large4"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .bluegray400))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapFileSelection();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "lbl_file_selection"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -519,12 +519,12 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                     ]))));
   }
 
-  onTapHomeScreen() {
-    Get.toNamed(AppRoutes.homeScreen);
+  onTapWaitingForSender() {
+    Get.toNamed(AppRoutes.waitingForSenderScreen);
   }
 
-  onTapAndroidLargeOne() {
-    Get.toNamed(AppRoutes.androidLargeOneScreen);
+  onTapSplashScreen() {
+    Get.toNamed(AppRoutes.splashScreen);
   }
 
   onTapAndroidLargeTwo() {
@@ -539,23 +539,23 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
     Get.toNamed(AppRoutes.androidLargeSixScreen);
   }
 
-  onTapAndroidLargeEight() {
-    Get.toNamed(AppRoutes.androidLargeEightScreen);
+  onTapSelectReceivers() {
+    Get.toNamed(AppRoutes.selectReceiversScreen);
   }
 
-  onTapAndroidLargeTen() {
-    Get.toNamed(AppRoutes.androidLargeTenScreen);
+  onTapActiveTransfers() {
+    Get.toNamed(AppRoutes.activeTransfersScreen);
   }
 
-  onTapAndroidLargeTwelve() {
-    Get.toNamed(AppRoutes.androidLargeTwelveScreen);
-  }
-
-  onTapAndroidLargeEleven() {
-    Get.toNamed(AppRoutes.androidLargeElevenScreen);
+  onTapActiveReceiving() {
+    Get.toNamed(AppRoutes.activeReceivingScreen);
   }
 
   onTapAndroidLargeSeven() {
     Get.toNamed(AppRoutes.androidLargeSevenScreen);
+  }
+
+  onTapFileSelection() {
+    Get.toNamed(AppRoutes.fileSelectionScreen);
   }
 }

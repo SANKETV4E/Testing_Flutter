@@ -1,31 +1,31 @@
-import 'package:flutter_testing/presentation/home_screen/home_screen.dart';
-import 'package:flutter_testing/presentation/home_screen/binding/home_binding.dart';
-import 'package:flutter_testing/presentation/android_large_one_screen/android_large_one_screen.dart';
-import 'package:flutter_testing/presentation/android_large_one_screen/binding/android_large_one_binding.dart';
+import 'package:flutter_testing/presentation/waiting_for_sender_screen/waiting_for_sender_screen.dart';
+import 'package:flutter_testing/presentation/waiting_for_sender_screen/binding/waiting_for_sender_binding.dart';
+import 'package:flutter_testing/presentation/splash_screen/splash_screen.dart';
+import 'package:flutter_testing/presentation/splash_screen/binding/splash_binding.dart';
 import 'package:flutter_testing/presentation/android_large_two_screen/android_large_two_screen.dart';
 import 'package:flutter_testing/presentation/android_large_two_screen/binding/android_large_two_binding.dart';
 import 'package:flutter_testing/presentation/android_large_five_screen/android_large_five_screen.dart';
 import 'package:flutter_testing/presentation/android_large_five_screen/binding/android_large_five_binding.dart';
 import 'package:flutter_testing/presentation/android_large_six_screen/android_large_six_screen.dart';
 import 'package:flutter_testing/presentation/android_large_six_screen/binding/android_large_six_binding.dart';
-import 'package:flutter_testing/presentation/android_large_eight_screen/android_large_eight_screen.dart';
-import 'package:flutter_testing/presentation/android_large_eight_screen/binding/android_large_eight_binding.dart';
-import 'package:flutter_testing/presentation/android_large_ten_screen/android_large_ten_screen.dart';
-import 'package:flutter_testing/presentation/android_large_ten_screen/binding/android_large_ten_binding.dart';
-import 'package:flutter_testing/presentation/android_large_twelve_screen/android_large_twelve_screen.dart';
-import 'package:flutter_testing/presentation/android_large_twelve_screen/binding/android_large_twelve_binding.dart';
-import 'package:flutter_testing/presentation/android_large_eleven_screen/android_large_eleven_screen.dart';
-import 'package:flutter_testing/presentation/android_large_eleven_screen/binding/android_large_eleven_binding.dart';
+import 'package:flutter_testing/presentation/select_receivers_screen/select_receivers_screen.dart';
+import 'package:flutter_testing/presentation/select_receivers_screen/binding/select_receivers_binding.dart';
+import 'package:flutter_testing/presentation/active_transfers_screen/active_transfers_screen.dart';
+import 'package:flutter_testing/presentation/active_transfers_screen/binding/active_transfers_binding.dart';
+import 'package:flutter_testing/presentation/active_receiving_screen/active_receiving_screen.dart';
+import 'package:flutter_testing/presentation/active_receiving_screen/binding/active_receiving_binding.dart';
 import 'package:flutter_testing/presentation/android_large_seven_screen/android_large_seven_screen.dart';
 import 'package:flutter_testing/presentation/android_large_seven_screen/binding/android_large_seven_binding.dart';
+import 'package:flutter_testing/presentation/file_selection_screen/file_selection_screen.dart';
+import 'package:flutter_testing/presentation/file_selection_screen/binding/file_selection_binding.dart';
 import 'package:flutter_testing/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:flutter_testing/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
-  static const String homeScreen = '/home_screen';
+  static const String waitingForSenderScreen = '/waiting_for_sender_screen';
 
-  static const String androidLargeOneScreen = '/android_large_one_screen';
+  static const String splashScreen = '/splash_screen';
 
   static const String androidLargeTwoScreen = '/android_large_two_screen';
 
@@ -33,15 +33,15 @@ class AppRoutes {
 
   static const String androidLargeSixScreen = '/android_large_six_screen';
 
-  static const String androidLargeEightScreen = '/android_large_eight_screen';
+  static const String selectReceiversScreen = '/select_receivers_screen';
 
-  static const String androidLargeTenScreen = '/android_large_ten_screen';
+  static const String activeTransfersScreen = '/active_transfers_screen';
 
-  static const String androidLargeTwelveScreen = '/android_large_twelve_screen';
-
-  static const String androidLargeElevenScreen = '/android_large_eleven_screen';
+  static const String activeReceivingScreen = '/active_receiving_screen';
 
   static const String androidLargeSevenScreen = '/android_large_seven_screen';
+
+  static const String fileSelectionScreen = '/file_selection_screen';
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
@@ -49,17 +49,17 @@ class AppRoutes {
 
   static List<GetPage> pages = [
     GetPage(
-      name: homeScreen,
-      page: () => HomeScreen(),
+      name: waitingForSenderScreen,
+      page: () => WaitingForSenderScreen(),
       bindings: [
-        HomeBinding(),
+        WaitingForSenderBinding(),
       ],
     ),
     GetPage(
-      name: androidLargeOneScreen,
-      page: () => AndroidLargeOneScreen(),
+      name: splashScreen,
+      page: () => SplashScreen(),
       bindings: [
-        AndroidLargeOneBinding(),
+        SplashBinding(),
       ],
     ),
     GetPage(
@@ -84,31 +84,24 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: androidLargeEightScreen,
-      page: () => AndroidLargeEightScreen(),
+      name: selectReceiversScreen,
+      page: () => SelectReceiversScreen(),
       bindings: [
-        AndroidLargeEightBinding(),
+        SelectReceiversBinding(),
       ],
     ),
     GetPage(
-      name: androidLargeTenScreen,
-      page: () => AndroidLargeTenScreen(),
+      name: activeTransfersScreen,
+      page: () => ActiveTransfersScreen(),
       bindings: [
-        AndroidLargeTenBinding(),
+        ActiveTransfersBinding(),
       ],
     ),
     GetPage(
-      name: androidLargeTwelveScreen,
-      page: () => AndroidLargeTwelveScreen(),
+      name: activeReceivingScreen,
+      page: () => ActiveReceivingScreen(),
       bindings: [
-        AndroidLargeTwelveBinding(),
-      ],
-    ),
-    GetPage(
-      name: androidLargeElevenScreen,
-      page: () => AndroidLargeElevenScreen(),
-      bindings: [
-        AndroidLargeElevenBinding(),
+        ActiveReceivingBinding(),
       ],
     ),
     GetPage(
@@ -116,6 +109,13 @@ class AppRoutes {
       page: () => AndroidLargeSevenScreen(),
       bindings: [
         AndroidLargeSevenBinding(),
+      ],
+    ),
+    GetPage(
+      name: fileSelectionScreen,
+      page: () => FileSelectionScreen(),
+      bindings: [
+        FileSelectionBinding(),
       ],
     ),
     GetPage(
@@ -127,9 +127,9 @@ class AppRoutes {
     ),
     GetPage(
       name: initialRoute,
-      page: () => HomeScreen(),
+      page: () => WaitingForSenderScreen(),
       bindings: [
-        HomeBinding(),
+        WaitingForSenderBinding(),
       ],
     )
   ];

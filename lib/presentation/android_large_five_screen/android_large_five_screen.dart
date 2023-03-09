@@ -27,7 +27,7 @@ class AndroidLargeFiveScreen extends GetWidget<AndroidLargeFiveController> {
                 1,
               ),
               colors: [
-                ColorConstant.blue20001,
+                ColorConstant.blue20002,
                 ColorConstant.whiteA700,
               ],
             ),

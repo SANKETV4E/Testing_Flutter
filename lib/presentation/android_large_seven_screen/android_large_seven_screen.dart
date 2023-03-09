@@ -9,7 +9,7 @@ class AndroidLargeSevenScreen extends GetWidget<AndroidLargeSevenController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: ColorConstant.blue20001,
+        backgroundColor: ColorConstant.blue20002,
         appBar: CustomAppBar(
           height: getVerticalSize(
             70,
@@ -62,7 +62,7 @@ class AndroidLargeSevenScreen extends GetWidget<AndroidLargeSevenController> {
                   bottom: 11,
                 ),
                 decoration: AppDecoration.fillWhiteA700.copyWith(
-                  borderRadius: BorderRadiusStyle.circleBorder21,
+                  borderRadius: BorderRadiusStyle.roundedBorder20,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -81,7 +81,7 @@ class AndroidLargeSevenScreen extends GetWidget<AndroidLargeSevenController> {
                         "lbl_send2".tr,
                         overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.left,
-                        style: AppStyle.txtInterMedium22WhiteA700,
+                        style: AppStyle.txtInterMedium22,
                       ),
                     ),
                     Padding(
