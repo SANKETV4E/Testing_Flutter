@@ -7,7 +7,7 @@ class SplashScreen extends GetWidget<SplashController> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: ColorConstant.blue200,
+            backgroundColor: ColorConstant.blue20001,
             body: Container(
                 width: getHorizontalSize(367),
                 padding: getPadding(top: 40, bottom: 40),
@@ -19,7 +19,7 @@ class SplashScreen extends GetWidget<SplashController> {
                           height: getVerticalSize(103),
                           width: getHorizontalSize(108),
                           radius: BorderRadius.circular(getHorizontalSize(5)),
-                          margin: getMargin(top: 256)),
+                          margin: getMargin(top: 226)),
                       Spacer(),
                       Text("lbl_trioshare".tr,
                           overflow: TextOverflow.ellipsis,

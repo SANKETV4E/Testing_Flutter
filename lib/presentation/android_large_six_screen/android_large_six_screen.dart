@@ -27,7 +27,7 @@ class AndroidLargeSixScreen extends GetWidget<AndroidLargeSixController> {
                 1,
               ),
               colors: [
-                ColorConstant.blue20001,
+                ColorConstant.blue20002,
                 ColorConstant.whiteA700,
               ],
             ),
@@ -42,13 +42,15 @@ class AndroidLargeSixScreen extends GetWidget<AndroidLargeSixController> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Spacer(),
                 Container(
                   height: getVerticalSize(
                     257,
                   ),
                   width: getHorizontalSize(
                     266,
+                  ),
+                  margin: getMargin(
+                    top: 87,
                   ),
                   child: Stack(
                     alignment: Alignment.topCenter,

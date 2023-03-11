@@ -1,6 +1,7 @@
 import 'controller/drawer_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing/core/app_export.dart';
+import 'package:flutter_testing/widgets/custom_button.dart';
 
 // ignore_for_file: must_be_immutable
 class DrawerScreenDraweritem extends StatelessWidget {
@@ -65,179 +66,109 @@ class DrawerScreenDraweritem extends StatelessWidget {
                 style: AppStyle.txtOutfitSemiBold13,
               ),
             ),
-            Container(
-              margin: getMargin(
-                left: 1,
-                top: 81,
-              ),
-              padding: getPadding(
-                top: 1,
-                right: 18,
-                bottom: 1,
+            CustomButton(
+              height: getVerticalSize(
+                17,
               ),
               width: getHorizontalSize(
                 121,
               ),
-              decoration: AppDecoration.btnFillBlue50.copyWith(
-                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: getMargin(
-                      right: 8,
-                    ),
-                    child: CustomImageView(
-                      svgPath: ImageConstant.imgSettings,
-                    ),
-                  ),
-                  Text(
-                    "lbl_settings".tr,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.btnInterMedium14Black900,
-                  ),
-                ],
-              ),
-            ),
-            Container(
+              text: "lbl_settings".tr,
               margin: getMargin(
                 left: 1,
-                top: 11,
+                top: 81,
               ),
-              padding: getPadding(
-                top: 1,
-                right: 19,
-                bottom: 1,
+              prefixWidget: Container(
+                margin: getMargin(
+                  right: 8,
+                ),
+                child: CustomImageView(
+                  svgPath: ImageConstant.imgSettings,
+                ),
+              ),
+            ),
+            CustomButton(
+              height: getVerticalSize(
+                20,
               ),
               width: getHorizontalSize(
                 115,
               ),
-              decoration: AppDecoration.btnFillBlue50.copyWith(
-                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: getMargin(
-                      right: 8,
-                    ),
-                    child: CustomImageView(
-                      svgPath: ImageConstant.imgClock,
-                    ),
-                  ),
-                  Text(
-                    "lbl_history".tr,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.btnInterMedium14Black900,
-                  ),
-                ],
-              ),
-            ),
-            Container(
+              text: "lbl_history".tr,
               margin: getMargin(
                 left: 1,
-                top: 7,
+                top: 11,
               ),
-              padding: getPadding(
-                top: 1,
-                right: 19,
-                bottom: 1,
+              prefixWidget: Container(
+                margin: getMargin(
+                  right: 8,
+                ),
+                child: CustomImageView(
+                  svgPath: ImageConstant.imgClock,
+                ),
+              ),
+            ),
+            CustomButton(
+              height: getVerticalSize(
+                20,
               ),
               width: getHorizontalSize(
                 133,
               ),
-              decoration: AppDecoration.btnFillBlue50.copyWith(
-                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: getMargin(
-                      right: 8,
-                    ),
-                    child: CustomImageView(
-                      svgPath: ImageConstant.imgCheckmark,
-                    ),
-                  ),
-                  Text(
-                    "lbl_feedback".tr,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.btnInterMedium14Black900,
-                  ),
-                ],
-              ),
-            ),
-            Container(
+              text: "lbl_feedback".tr,
               margin: getMargin(
                 left: 1,
                 top: 7,
               ),
-              padding: getPadding(
-                top: 1,
-                right: 20,
-                bottom: 1,
+              prefixWidget: Container(
+                margin: getMargin(
+                  right: 8,
+                ),
+                child: CustomImageView(
+                  svgPath: ImageConstant.imgCheckmark,
+                ),
+              ),
+            ),
+            CustomButton(
+              height: getVerticalSize(
+                20,
               ),
               width: getHorizontalSize(
                 99,
               ),
-              decoration: AppDecoration.btnFillBlue50.copyWith(
-                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              text: "lbl_help".tr,
+              margin: getMargin(
+                left: 1,
+                top: 7,
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: getMargin(
-                      right: 8,
-                    ),
-                    child: CustomImageView(
-                      svgPath: ImageConstant.imgQuestion,
-                    ),
-                  ),
-                  Text(
-                    "lbl_help".tr,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.btnInterMedium14Black900,
-                  ),
-                ],
+              prefixWidget: Container(
+                margin: getMargin(
+                  right: 8,
+                ),
+                child: CustomImageView(
+                  svgPath: ImageConstant.imgQuestion,
+                ),
               ),
             ),
-            Container(
-              margin: getMargin(
-                top: 8,
-                bottom: 414,
-              ),
-              padding: getPadding(
-                top: 1,
-                right: 22,
-                bottom: 1,
+            CustomButton(
+              height: getVerticalSize(
+                20,
               ),
               width: getHorizontalSize(
                 114,
               ),
-              decoration: AppDecoration.btnFillBlue50.copyWith(
-                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              text: "lbl_about".tr,
+              margin: getMargin(
+                top: 8,
+                bottom: 414,
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: getMargin(
-                      right: 8,
-                    ),
-                    child: CustomImageView(
-                      svgPath: ImageConstant.imgWarning,
-                    ),
-                  ),
-                  Text(
-                    "lbl_about".tr,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.btnInterMedium14Black900,
-                  ),
-                ],
+              prefixWidget: Container(
+                margin: getMargin(
+                  right: 8,
+                ),
+                child: CustomImageView(
+                  svgPath: ImageConstant.imgWarning,
+                ),
               ),
             ),
           ],
