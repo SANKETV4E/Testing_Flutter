@@ -1,9 +1,10 @@
-import 'controller/select_receivers_controller.dart';
+import 'controller/searching_for_receiver_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing/core/app_export.dart';
 import 'package:flutter_testing/widgets/custom_button.dart';
 
-class SelectReceiversScreen extends GetWidget<SelectReceiversController> {
+class SearchingForReceiverScreen
+    extends GetWidget<SearchingForReceiverController> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -11,21 +12,15 @@ class SelectReceiversScreen extends GetWidget<SelectReceiversController> {
             backgroundColor: ColorConstant.blue100,
             body: Container(
                 width: double.maxFinite,
-                padding: getPadding(left: 15, top: 20, right: 15, bottom: 20),
+                padding: getPadding(left: 26, right: 26),
                 child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CustomImageView(
-                          svgPath: ImageConstant.imgMenuBlue70048x48,
-                          height: getSize(48),
-                          width: getSize(48),
-                          alignment: Alignment.centerLeft),
-                      Spacer(),
                       Card(
                           clipBehavior: Clip.antiAlias,
                           elevation: 0,
                           margin: EdgeInsets.all(0),
-                          color: ColorConstant.blue200,
+                          color: ColorConstant.blue20002,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusStyle.circleBorder154),
                           child: Container(
@@ -33,7 +28,7 @@ class SelectReceiversScreen extends GetWidget<SelectReceiversController> {
                               width: getHorizontalSize(308),
                               padding: getPadding(
                                   left: 31, top: 27, right: 31, bottom: 27),
-                              decoration: AppDecoration.fillBlue200.copyWith(
+                              decoration: AppDecoration.fillBlue20002.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.circleBorder154),
                               child: Stack(
@@ -173,15 +168,16 @@ class SelectReceiversScreen extends GetWidget<SelectReceiversController> {
                           height: getVerticalSize(57),
                           width: getHorizontalSize(152),
                           text: "lbl_cancel".tr,
-                          margin: getMargin(top: 77, bottom: 44),
+                          margin: getMargin(top: 77),
                           variant: ButtonVariant.OutlineBlue500,
                           padding: ButtonPadding.PaddingAll15,
                           fontStyle: ButtonFontStyle.InterMedium22,
-                          onTap: onTapCancel)
+                          onTap: onTapCancel),
+                      Spacer()
                     ]))));
   }
 
   onTapCancel() {
-// TODO: implement Actions
+    Get.toNamed(AppRoutes.homeScreen);
   }
 }

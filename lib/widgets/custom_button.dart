@@ -101,21 +101,13 @@ class CustomButton extends StatelessWidget {
 
   _setPadding() {
     switch (padding) {
-      case ButtonPadding.PaddingAll15:
-        return getPadding(
-          all: 15,
-        );
       case ButtonPadding.PaddingAll9:
         return getPadding(
           all: 9,
         );
-      case ButtonPadding.PaddingAll21:
+      case ButtonPadding.PaddingAll15:
         return getPadding(
-          all: 21,
-        );
-      case ButtonPadding.PaddingAll4:
-        return getPadding(
-          all: 4,
+          all: 15,
         );
       default:
         return getPadding(
@@ -130,8 +122,6 @@ class CustomButton extends StatelessWidget {
     switch (variant) {
       case ButtonVariant.OutlineBlue500:
         return ColorConstant.blue500;
-      case ButtonVariant.FillBlue500:
-        return ColorConstant.blue500;
       case ButtonVariant.OutlineBlue800_1:
         return null;
       default:
@@ -141,16 +131,16 @@ class CustomButton extends StatelessWidget {
 
   _setTextButtonBorder() {
     switch (variant) {
-      case ButtonVariant.OutlineBlue500:
+      case ButtonVariant.OutlineBlue800_1:
         return BorderSide(
-          color: ColorConstant.blue500,
+          color: ColorConstant.blue800,
           width: getHorizontalSize(
             1.00,
           ),
         );
-      case ButtonVariant.OutlineBlue800_1:
+      case ButtonVariant.OutlineBlue500:
         return BorderSide(
-          color: ColorConstant.blue800,
+          color: ColorConstant.blue500,
           width: getHorizontalSize(
             1.00,
           ),
@@ -162,24 +152,12 @@ class CustomButton extends StatelessWidget {
 
   _setBorderRadius() {
     switch (shape) {
-      case ButtonShape.RoundedBorder20:
-        return BorderRadius.circular(
-          getHorizontalSize(
-            20.00,
-          ),
-        );
-      case ButtonShape.RoundedBorder5:
-        return BorderRadius.circular(
-          getHorizontalSize(
-            5.00,
-          ),
-        );
       case ButtonShape.Square:
         return BorderRadius.circular(0);
       default:
         return BorderRadius.circular(
           getHorizontalSize(
-            10.00,
+            8.00,
           ),
         );
     }
@@ -187,18 +165,6 @@ class CustomButton extends StatelessWidget {
 
   _setFontStyle() {
     switch (fontStyle) {
-      case ButtonFontStyle.InterMedium22:
-        return TextStyle(
-          color: ColorConstant.gray50,
-          fontSize: getFontSize(
-            22,
-          ),
-          fontFamily: 'Inter',
-          fontWeight: FontWeight.w500,
-          height: getVerticalSize(
-            1.23,
-          ),
-        );
       case ButtonFontStyle.InterMedium14:
         return TextStyle(
           color: ColorConstant.blue800,
@@ -211,16 +177,16 @@ class CustomButton extends StatelessWidget {
             1.21,
           ),
         );
-      case ButtonFontStyle.TTCommonsMedium20:
+      case ButtonFontStyle.InterMedium22:
         return TextStyle(
-          color: ColorConstant.whiteA700,
+          color: ColorConstant.gray50,
           fontSize: getFontSize(
-            20,
+            22,
           ),
-          fontFamily: 'TT Commons',
+          fontFamily: 'Inter',
           fontWeight: FontWeight.w500,
           height: getVerticalSize(
-            1.20,
+            1.23,
           ),
         );
       default:
@@ -242,28 +208,22 @@ class CustomButton extends StatelessWidget {
 enum ButtonShape {
   Square,
   RoundedBorder8,
-  RoundedBorder20,
-  RoundedBorder5,
 }
 
 enum ButtonPadding {
   OutlineBlue800,
-  PaddingAll15,
   PaddingAll9,
-  PaddingAll21,
-  PaddingAll4,
+  PaddingAll15,
 }
 
 enum ButtonVariant {
   FillBlue50,
-  OutlineBlue500,
   OutlineBlue800_1,
-  FillBlue500,
+  OutlineBlue500,
 }
 
 enum ButtonFontStyle {
   InterMedium14Black900,
-  InterMedium22,
   InterMedium14,
-  TTCommonsMedium20,
+  InterMedium22,
 }

@@ -27,7 +27,7 @@ class AndroidLargeTwoScreen extends GetWidget<AndroidLargeTwoController> {
                 1,
               ),
               colors: [
-                ColorConstant.blue20002,
+                ColorConstant.blue20001,
                 ColorConstant.whiteA700,
               ],
             ),

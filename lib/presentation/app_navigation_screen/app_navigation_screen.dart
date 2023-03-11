@@ -57,7 +57,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                       children: [
                                         GestureDetector(
                                             onTap: () {
-                                              onTapWaitingForSender();
+                                              onTapWaitingforSender();
                                             },
                                             child: Container(
                                                 decoration:
@@ -79,6 +79,52 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                           10),
                                                               child: Text(
                                                                   "msg_waiting_for_sender2"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .bluegray400))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapHomescreen();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "lbl_home_screen"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -287,7 +333,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapSelectReceivers();
+                                              onTapSearchingforreceiver();
                                             },
                                             child: Container(
                                                 decoration:
@@ -308,7 +354,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "msg_select_receivers"
+                                                                  "msg_searching_for_receiver"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -422,105 +468,17 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       1),
                                                               color: ColorConstant
                                                                   .bluegray400))
-                                                    ]))),
-                                        GestureDetector(
-                                            onTap: () {
-                                              onTapAndroidLargeSeven();
-                                            },
-                                            child: Container(
-                                                decoration:
-                                                    AppDecoration.fillWhiteA700,
-                                                child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    children: [
-                                                      Align(
-                                                          alignment: Alignment
-                                                              .centerLeft,
-                                                          child: Padding(
-                                                              padding:
-                                                                  getPadding(
-                                                                      left: 20,
-                                                                      top: 10,
-                                                                      right: 20,
-                                                                      bottom:
-                                                                          10),
-                                                              child: Text(
-                                                                  "msg_android_large4"
-                                                                      .tr,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .center,
-                                                                  style: AppStyle
-                                                                      .txtRobotoRegular20))),
-                                                      Padding(
-                                                          padding: getPadding(
-                                                              top: 5),
-                                                          child: Divider(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              thickness:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              color: ColorConstant
-                                                                  .bluegray400))
-                                                    ]))),
-                                        GestureDetector(
-                                            onTap: () {
-                                              onTapFileSelection();
-                                            },
-                                            child: Container(
-                                                decoration:
-                                                    AppDecoration.fillWhiteA700,
-                                                child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    children: [
-                                                      Align(
-                                                          alignment: Alignment
-                                                              .centerLeft,
-                                                          child: Padding(
-                                                              padding:
-                                                                  getPadding(
-                                                                      left: 20,
-                                                                      top: 10,
-                                                                      right: 20,
-                                                                      bottom:
-                                                                          10),
-                                                              child: Text(
-                                                                  "lbl_file_selection"
-                                                                      .tr,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .center,
-                                                                  style: AppStyle
-                                                                      .txtRobotoRegular20))),
-                                                      Padding(
-                                                          padding: getPadding(
-                                                              top: 5),
-                                                          child: Divider(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              thickness:
-                                                                  getVerticalSize(
-                                                                      1),
-                                                              color: ColorConstant
-                                                                  .bluegray400))
                                                     ])))
                                       ]))))
                     ]))));
   }
 
-  onTapWaitingForSender() {
+  onTapWaitingforSender() {
     Get.toNamed(AppRoutes.waitingForSenderScreen);
+  }
+
+  onTapHomescreen() {
+    Get.toNamed(AppRoutes.homeScreen);
   }
 
   onTapSplashScreen() {
@@ -539,8 +497,8 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
     Get.toNamed(AppRoutes.androidLargeSixScreen);
   }
 
-  onTapSelectReceivers() {
-    Get.toNamed(AppRoutes.selectReceiversScreen);
+  onTapSearchingforreceiver() {
+    Get.toNamed(AppRoutes.searchingForReceiverScreen);
   }
 
   onTapActiveTransfers() {
@@ -549,13 +507,5 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
 
   onTapActiveReceiving() {
     Get.toNamed(AppRoutes.activeReceivingScreen);
-  }
-
-  onTapAndroidLargeSeven() {
-    Get.toNamed(AppRoutes.androidLargeSevenScreen);
-  }
-
-  onTapFileSelection() {
-    Get.toNamed(AppRoutes.fileSelectionScreen);
   }
 }

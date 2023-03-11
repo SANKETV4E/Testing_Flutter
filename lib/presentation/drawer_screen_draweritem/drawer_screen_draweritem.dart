@@ -1,7 +1,6 @@
 import 'controller/drawer_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing/core/app_export.dart';
-import 'package:flutter_testing/widgets/custom_button.dart';
 
 // ignore_for_file: must_be_immutable
 class DrawerScreenDraweritem extends StatelessWidget {
@@ -66,109 +65,179 @@ class DrawerScreenDraweritem extends StatelessWidget {
                 style: AppStyle.txtOutfitSemiBold13,
               ),
             ),
-            CustomButton(
-              height: getVerticalSize(
-                17,
-              ),
-              width: getHorizontalSize(
-                121,
-              ),
-              text: "lbl_settings".tr,
+            Container(
               margin: getMargin(
                 left: 1,
                 top: 81,
               ),
-              prefixWidget: Container(
-                margin: getMargin(
-                  right: 8,
-                ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgSettings,
-                ),
-              ),
-            ),
-            CustomButton(
-              height: getVerticalSize(
-                20,
+              padding: getPadding(
+                top: 1,
+                right: 18,
+                bottom: 1,
               ),
               width: getHorizontalSize(
-                115,
+                121,
               ),
-              text: "lbl_history".tr,
+              decoration: AppDecoration.btnFillBlue50.copyWith(
+                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: getMargin(
+                      right: 8,
+                    ),
+                    child: CustomImageView(
+                      svgPath: ImageConstant.imgSettings,
+                    ),
+                  ),
+                  Text(
+                    "lbl_settings".tr,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.btnInterMedium14Black900,
+                  ),
+                ],
+              ),
+            ),
+            Container(
               margin: getMargin(
                 left: 1,
                 top: 11,
               ),
-              prefixWidget: Container(
-                margin: getMargin(
-                  right: 8,
-                ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgClock,
-                ),
+              padding: getPadding(
+                top: 1,
+                right: 19,
+                bottom: 1,
+              ),
+              width: getHorizontalSize(
+                115,
+              ),
+              decoration: AppDecoration.btnFillBlue50.copyWith(
+                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: getMargin(
+                      right: 8,
+                    ),
+                    child: CustomImageView(
+                      svgPath: ImageConstant.imgClock,
+                    ),
+                  ),
+                  Text(
+                    "lbl_history".tr,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.btnInterMedium14Black900,
+                  ),
+                ],
               ),
             ),
-            CustomButton(
-              height: getVerticalSize(
-                20,
+            Container(
+              margin: getMargin(
+                left: 1,
+                top: 7,
+              ),
+              padding: getPadding(
+                top: 1,
+                right: 19,
+                bottom: 1,
               ),
               width: getHorizontalSize(
                 133,
               ),
-              text: "lbl_feedback".tr,
+              decoration: AppDecoration.btnFillBlue50.copyWith(
+                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: getMargin(
+                      right: 8,
+                    ),
+                    child: CustomImageView(
+                      svgPath: ImageConstant.imgCheckmark,
+                    ),
+                  ),
+                  Text(
+                    "lbl_feedback".tr,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.btnInterMedium14Black900,
+                  ),
+                ],
+              ),
+            ),
+            Container(
               margin: getMargin(
                 left: 1,
                 top: 7,
               ),
-              prefixWidget: Container(
-                margin: getMargin(
-                  right: 8,
-                ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgCheckmark,
-                ),
-              ),
-            ),
-            CustomButton(
-              height: getVerticalSize(
-                20,
+              padding: getPadding(
+                top: 1,
+                right: 20,
+                bottom: 1,
               ),
               width: getHorizontalSize(
                 99,
               ),
-              text: "lbl_help".tr,
-              margin: getMargin(
-                left: 1,
-                top: 7,
+              decoration: AppDecoration.btnFillBlue50.copyWith(
+                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
               ),
-              prefixWidget: Container(
-                margin: getMargin(
-                  right: 8,
-                ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgQuestion,
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: getMargin(
+                      right: 8,
+                    ),
+                    child: CustomImageView(
+                      svgPath: ImageConstant.imgQuestion,
+                    ),
+                  ),
+                  Text(
+                    "lbl_help".tr,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.btnInterMedium14Black900,
+                  ),
+                ],
               ),
             ),
-            CustomButton(
-              height: getVerticalSize(
-                20,
-              ),
-              width: getHorizontalSize(
-                114,
-              ),
-              text: "lbl_about".tr,
+            Container(
               margin: getMargin(
                 top: 8,
                 bottom: 414,
               ),
-              prefixWidget: Container(
-                margin: getMargin(
-                  right: 8,
-                ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgWarning,
-                ),
+              padding: getPadding(
+                top: 1,
+                right: 22,
+                bottom: 1,
+              ),
+              width: getHorizontalSize(
+                114,
+              ),
+              decoration: AppDecoration.btnFillBlue50.copyWith(
+                borderRadius: BorderRadiusStyle.btnRoundedBorder8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: getMargin(
+                      right: 8,
+                    ),
+                    child: CustomImageView(
+                      svgPath: ImageConstant.imgWarning,
+                    ),
+                  ),
+                  Text(
+                    "lbl_about".tr,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.btnInterMedium14Black900,
+                  ),
+                ],
               ),
             ),
           ],

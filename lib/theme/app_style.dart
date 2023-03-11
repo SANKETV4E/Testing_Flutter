@@ -11,24 +11,6 @@ class AppStyle {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle txtTTCommonsRegular20Black900011 = TextStyle(
-    color: ColorConstant.black90001,
-    fontSize: getFontSize(
-      20,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
-  );
-
-  static TextStyle txtTTCommonsRegular18Black900 = TextStyle(
-    color: ColorConstant.black900,
-    fontSize: getFontSize(
-      18,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
-  );
-
   static TextStyle txtInterBold19 = TextStyle(
     color: ColorConstant.whiteA700,
     fontSize: getFontSize(
@@ -38,6 +20,15 @@ class AppStyle {
     fontWeight: FontWeight.w700,
   );
 
+  static TextStyle txtOutfitSemiBold20Black900 = TextStyle(
+    color: ColorConstant.black900,
+    fontSize: getFontSize(
+      20,
+    ),
+    fontFamily: 'Outfit',
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle txtInterMedium12 = TextStyle(
     color: ColorConstant.gray600,
     fontSize: getFontSize(
@@ -45,24 +36,6 @@ class AppStyle {
     ),
     fontFamily: 'Inter',
     fontWeight: FontWeight.w500,
-  );
-
-  static TextStyle txtInterBold25 = TextStyle(
-    color: ColorConstant.whiteA700,
-    fontSize: getFontSize(
-      25,
-    ),
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w700,
-  );
-
-  static TextStyle txtTTCommonsRegular20Black90001 = TextStyle(
-    color: ColorConstant.black90001,
-    fontSize: getFontSize(
-      20,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
   );
 
   static TextStyle txtOutfitSemiBold24Black900 = TextStyle(
@@ -84,7 +57,7 @@ class AppStyle {
   );
 
   static TextStyle txtInterMedium22 = TextStyle(
-    color: ColorConstant.whiteA700,
+    color: ColorConstant.gray50,
     fontSize: getFontSize(
       22,
     ),
@@ -99,15 +72,6 @@ class AppStyle {
     ),
     fontFamily: 'Inter',
     fontWeight: FontWeight.w700,
-  );
-
-  static TextStyle txtTTCommonsDemiBold20 = TextStyle(
-    color: ColorConstant.black90001,
-    fontSize: getFontSize(
-      20,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w600,
   );
 
   static TextStyle txtOutfitSemiBold24 = TextStyle(
@@ -128,15 +92,6 @@ class AppStyle {
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle txtTTCommonsRegular12 = TextStyle(
-    color: ColorConstant.gray800,
-    fontSize: getFontSize(
-      12,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
-  );
-
   static TextStyle txtRobotoRegular16 = TextStyle(
     color: ColorConstant.bluegray400,
     fontSize: getFontSize(
@@ -144,24 +99,6 @@ class AppStyle {
     ),
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w400,
-  );
-
-  static TextStyle txtTTCommonsRegular20 = TextStyle(
-    color: ColorConstant.gray800,
-    fontSize: getFontSize(
-      20,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
-  );
-
-  static TextStyle txtInterMedium22Black900 = TextStyle(
-    color: ColorConstant.black900,
-    fontSize: getFontSize(
-      22,
-    ),
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w500,
   );
 
   static TextStyle txtInterSemiBold20 = TextStyle(
@@ -189,15 +126,6 @@ class AppStyle {
     ),
     fontFamily: 'Outfit',
     fontWeight: FontWeight.w600,
-  );
-
-  static TextStyle txtTTCommonsRegular18 = TextStyle(
-    color: ColorConstant.gray800,
-    fontSize: getFontSize(
-      18,
-    ),
-    fontFamily: 'TT Commons',
-    fontWeight: FontWeight.w400,
   );
 
   static TextStyle txtInterRegular16 = TextStyle(
