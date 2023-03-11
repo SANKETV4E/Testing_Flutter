@@ -31,3 +31,7 @@ flutter:
       fonts: 
         - asset: assets/fonts/InterMedium.ttf
           weight: 500
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400

@@ -149,6 +149,144 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
+                                              onTapAndroidLargeTwo();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "msg_android_large"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .bluegray400))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapAndroidLargeFive();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "msg_android_large2"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .bluegray400))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapAndroidLargeSix();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "msg_android_large3"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .bluegray400))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
                                               onTapSearchingforreceiver();
                                             },
                                             child: Container(
@@ -249,6 +387,18 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
 
   onTapSplashScreen() {
     Get.toNamed(AppRoutes.splashScreen);
+  }
+
+  onTapAndroidLargeTwo() {
+    Get.toNamed(AppRoutes.androidLargeTwoScreen);
+  }
+
+  onTapAndroidLargeFive() {
+    Get.toNamed(AppRoutes.androidLargeFiveScreen);
+  }
+
+  onTapAndroidLargeSix() {
+    Get.toNamed(AppRoutes.androidLargeSixScreen);
   }
 
   onTapSearchingforreceiver() {

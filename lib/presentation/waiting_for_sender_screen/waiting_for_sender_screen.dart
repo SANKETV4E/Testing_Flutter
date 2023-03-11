@@ -19,7 +19,7 @@ class WaitingForSenderScreen extends GetWidget<WaitingForSenderController> {
                           clipBehavior: Clip.antiAlias,
                           elevation: 0,
                           margin: EdgeInsets.all(0),
-                          color: ColorConstant.blue20001,
+                          color: ColorConstant.blue20002,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusStyle.circleBorder154),
                           child: Container(
@@ -27,7 +27,7 @@ class WaitingForSenderScreen extends GetWidget<WaitingForSenderController> {
                               width: getHorizontalSize(308),
                               padding: getPadding(
                                   left: 31, top: 34, right: 31, bottom: 34),
-                              decoration: AppDecoration.fillBlue20001.copyWith(
+                              decoration: AppDecoration.fillBlue20002.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.circleBorder154),
                               child:

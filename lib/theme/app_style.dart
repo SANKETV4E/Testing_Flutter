@@ -38,6 +38,15 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
+  static TextStyle txtInterSemiBold20 = TextStyle(
+    color: ColorConstant.black900,
+    fontSize: getFontSize(
+      20,
+    ),
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle txtOutfitSemiBold24Black900 = TextStyle(
     color: ColorConstant.black900,
     fontSize: getFontSize(
@@ -56,6 +65,15 @@ class AppStyle {
     fontWeight: FontWeight.w500,
   );
 
+  static TextStyle txtInterSemiBold20Black900 = TextStyle(
+    color: ColorConstant.black900,
+    fontSize: getFontSize(
+      20,
+    ),
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle txtOutfitSemiBold20 = TextStyle(
     color: ColorConstant.black900,
     fontSize: getFontSize(
@@ -72,6 +90,15 @@ class AppStyle {
     ),
     fontFamily: 'Outfit',
     fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle txtInterRegular16 = TextStyle(
+    color: ColorConstant.blueGray600,
+    fontSize: getFontSize(
+      16,
+    ),
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w400,
   );
 
   static TextStyle txtRobotoRegular20 = TextStyle(

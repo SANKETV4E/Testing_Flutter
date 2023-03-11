@@ -20,7 +20,7 @@ class SearchingForReceiverScreen
                           clipBehavior: Clip.antiAlias,
                           elevation: 0,
                           margin: EdgeInsets.all(0),
-                          color: ColorConstant.blue20001,
+                          color: ColorConstant.blue20002,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusStyle.circleBorder154),
                           child: Container(
@@ -28,7 +28,7 @@ class SearchingForReceiverScreen
                               width: getHorizontalSize(308),
                               padding: getPadding(
                                   left: 31, top: 27, right: 31, bottom: 27),
-                              decoration: AppDecoration.fillBlue20001.copyWith(
+                              decoration: AppDecoration.fillBlue20002.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.circleBorder154),
                               child: Stack(

@@ -5,11 +5,27 @@ class AppDecoration {
   static BoxDecoration get fillTeal50 => BoxDecoration(
         color: ColorConstant.teal50,
       );
-  static BoxDecoration get fillBlue20001 => BoxDecoration(
-        color: ColorConstant.blue20001,
+  static BoxDecoration get fillBlue20002 => BoxDecoration(
+        color: ColorConstant.blue20002,
       );
   static BoxDecoration get fillBlue700 => BoxDecoration(
         color: ColorConstant.blue700,
+      );
+  static BoxDecoration get outlineBlack9003f => BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment(
+            0.5,
+            0,
+          ),
+          end: Alignment(
+            0.5,
+            1,
+          ),
+          colors: [
+            ColorConstant.blue20001,
+            ColorConstant.whiteA700,
+          ],
+        ),
       );
   static BoxDecoration get fillBlue100 => BoxDecoration(
         color: ColorConstant.blue100,

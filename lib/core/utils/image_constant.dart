@@ -6,6 +6,8 @@ class ImageConstant {
   static String imgAvatarjosephmcfall =
       'assets/images/img_avatarjosephmcfall.png';
 
+  static String imgNodata1 = 'assets/images/img_nodata1.png';
+
   static String imgWarning = 'assets/images/img_warning.svg';
 
   static String imgAvatarrobertacasas =
@@ -29,7 +31,11 @@ class ImageConstant {
   static String imgAvatarneilsims123x127 =
       'assets/images/img_avatarneilsims_123x127.png';
 
+  static String imgImages1 = 'assets/images/img_images1.png';
+
   static String imgCheckmark = 'assets/images/img_checkmark.svg';
+
+  static String imgGrouppeoplelo = 'assets/images/img_grouppeoplelo.png';
 
   static String imgQuestion = 'assets/images/img_question.svg';
 
