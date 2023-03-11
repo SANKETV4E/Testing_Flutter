@@ -19,7 +19,7 @@ class WaitingForSenderScreen extends GetWidget<WaitingForSenderController> {
                           clipBehavior: Clip.antiAlias,
                           elevation: 0,
                           margin: EdgeInsets.all(0),
-                          color: ColorConstant.blue20002,
+                          color: ColorConstant.blue20001,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusStyle.circleBorder154),
                           child: Container(
@@ -27,7 +27,7 @@ class WaitingForSenderScreen extends GetWidget<WaitingForSenderController> {
                               width: getHorizontalSize(308),
                               padding: getPadding(
                                   left: 31, top: 34, right: 31, bottom: 34),
-                              decoration: AppDecoration.fillBlue20002.copyWith(
+                              decoration: AppDecoration.fillBlue20001.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.circleBorder154),
                               child:
@@ -106,7 +106,7 @@ class WaitingForSenderScreen extends GetWidget<WaitingForSenderController> {
                           child: Text("lbl_waiting".tr,
                               overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.left,
-                              style: AppStyle.txtOutfitSemiBold20)),
+                              style: AppStyle.txtOutfitSemiBold20WhiteA70090)),
                       Padding(
                           padding: getPadding(top: 23),
                           child: Text("msg_waiting_for_sender".tr,

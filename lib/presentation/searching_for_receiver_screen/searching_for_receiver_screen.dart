@@ -20,7 +20,7 @@ class SearchingForReceiverScreen
                           clipBehavior: Clip.antiAlias,
                           elevation: 0,
                           margin: EdgeInsets.all(0),
-                          color: ColorConstant.blue20002,
+                          color: ColorConstant.blue20001,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadiusStyle.circleBorder154),
                           child: Container(
@@ -28,7 +28,7 @@ class SearchingForReceiverScreen
                               width: getHorizontalSize(308),
                               padding: getPadding(
                                   left: 31, top: 27, right: 31, bottom: 27),
-                              decoration: AppDecoration.fillBlue20002.copyWith(
+                              decoration: AppDecoration.fillBlue20001.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.circleBorder154),
                               child: Stack(
@@ -157,7 +157,7 @@ class SearchingForReceiverScreen
                           child: Text("lbl_searching".tr,
                               overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.left,
-                              style: AppStyle.txtOutfitSemiBold20)),
+                              style: AppStyle.txtOutfitSemiBold20WhiteA70090)),
                       Padding(
                           padding: getPadding(top: 23),
                           child: Text("lbl_select_3_people".tr,

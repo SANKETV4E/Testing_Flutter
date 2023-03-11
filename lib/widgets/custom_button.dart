@@ -101,10 +101,6 @@ class CustomButton extends StatelessWidget {
 
   _setPadding() {
     switch (padding) {
-      case ButtonPadding.PaddingAll9:
-        return getPadding(
-          all: 9,
-        );
       case ButtonPadding.PaddingAll15:
         return getPadding(
           all: 15,
@@ -122,8 +118,6 @@ class CustomButton extends StatelessWidget {
     switch (variant) {
       case ButtonVariant.OutlineBlue500:
         return ColorConstant.blue500;
-      case ButtonVariant.OutlineBlue800_1:
-        return null;
       default:
         return ColorConstant.blue50;
     }
@@ -131,13 +125,6 @@ class CustomButton extends StatelessWidget {
 
   _setTextButtonBorder() {
     switch (variant) {
-      case ButtonVariant.OutlineBlue800_1:
-        return BorderSide(
-          color: ColorConstant.blue800,
-          width: getHorizontalSize(
-            1.00,
-          ),
-        );
       case ButtonVariant.OutlineBlue500:
         return BorderSide(
           color: ColorConstant.blue500,
@@ -157,7 +144,7 @@ class CustomButton extends StatelessWidget {
       default:
         return BorderRadius.circular(
           getHorizontalSize(
-            8.00,
+            10.00,
           ),
         );
     }
@@ -165,18 +152,6 @@ class CustomButton extends StatelessWidget {
 
   _setFontStyle() {
     switch (fontStyle) {
-      case ButtonFontStyle.InterMedium14:
-        return TextStyle(
-          color: ColorConstant.blue800,
-          fontSize: getFontSize(
-            14,
-          ),
-          fontFamily: 'Inter',
-          fontWeight: FontWeight.w500,
-          height: getVerticalSize(
-            1.21,
-          ),
-        );
       case ButtonFontStyle.InterMedium22:
         return TextStyle(
           color: ColorConstant.gray50,
@@ -212,18 +187,15 @@ enum ButtonShape {
 
 enum ButtonPadding {
   OutlineBlue800,
-  PaddingAll9,
   PaddingAll15,
 }
 
 enum ButtonVariant {
   FillBlue50,
-  OutlineBlue800_1,
   OutlineBlue500,
 }
 
 enum ButtonFontStyle {
   InterMedium14Black900,
-  InterMedium14,
   InterMedium22,
 }

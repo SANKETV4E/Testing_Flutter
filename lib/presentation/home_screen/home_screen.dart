@@ -56,7 +56,7 @@ class HomeScreen extends GetWidget<HomeController> {
             "lbl_trioshare".tr,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.left,
-            style: AppStyle.txtOutfitSemiBold20Black900,
+            style: AppStyle.txtOutfitSemiBold20,
           ),
           actions: [
             Container(

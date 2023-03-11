@@ -6,11 +6,7 @@ class ImageConstant {
   static String imgAvatarjosephmcfall =
       'assets/images/img_avatarjosephmcfall.png';
 
-  static String imgNodata1 = 'assets/images/img_nodata1.png';
-
   static String imgWarning = 'assets/images/img_warning.svg';
-
-  static String imgMusic = 'assets/images/img_music.svg';
 
   static String imgAvatarrobertacasas =
       'assets/images/img_avatarrobertacasas.png';
@@ -18,8 +14,6 @@ class ImageConstant {
   static String imgMenu = 'assets/images/img_menu.svg';
 
   static String imgClock = 'assets/images/img_clock.svg';
-
-  static String imgReply = 'assets/images/img_reply.svg';
 
   static String imgAvatarheleneengels =
       'assets/images/img_avatarheleneengels.png';
@@ -30,20 +24,12 @@ class ImageConstant {
 
   static String imgSettings = 'assets/images/img_settings.svg';
 
-  static String imgBookmark = 'assets/images/img_bookmark.svg';
-
   static String imgMenuBlue700 = 'assets/images/img_menu_blue_700.svg';
 
   static String imgAvatarneilsims123x127 =
       'assets/images/img_avatarneilsims_123x127.png';
 
-  static String imgPlay = 'assets/images/img_play.svg';
-
-  static String imgImages1 = 'assets/images/img_images1.png';
-
   static String imgCheckmark = 'assets/images/img_checkmark.svg';
-
-  static String imgGrouppeoplelo = 'assets/images/img_grouppeoplelo.png';
 
   static String imgQuestion = 'assets/images/img_question.svg';
 
